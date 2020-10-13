@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <title>EL PEPE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Terrify your teammates during competition!">
+    <style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+h1 { display: none; }
+img {
+    width: 400px;
+    max-width: 100vw;
+}
+button {
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+    border: black;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+button :hover {
+   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+button:nth-child(1) { background-image: url('Captura.PNG') }
+
+
+.banner {
+    position: absolute;
+    top: 40px;
+    left: -80px;
+    padding: 10px;
+    color: white;
+    background: #175f7e;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(-45deg);
+}
+
+    </style>
+    <script data-ad-client="ca-pub-7724286756573875" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CyberPatriot Soundboard</h1>
+        <img src="mamawebaso.PNG" alt="CyberPatriot logo">
+    </header>
+    <main>
+        <!-- Buttons placed here -->
+    </main>
+
+   
+    <script>
+var sounds = [''];
+var main = document.getElementsByTagName('main')[0];
+for (i in sounds) {
+    var btn = document.createElement('button');
+    btn.innerHTML = sounds[i].toUpperCase();
+    btn.id = sounds[i];
+
+    main.appendChild(btn);
+}
+
+onclick = function(e) {
+    if (e.target.tagName === 'BUTTON') (new Audio('sounds/elpep.mp3')).play();
+}
+    </script>
+</body>
+</html>
